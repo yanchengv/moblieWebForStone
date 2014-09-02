@@ -5,7 +5,7 @@ module ApplicationHelper
     presenter = Refinery::Pages::MenuPresenter.new(side_menu_items, self)
     presenter.dom_id = "topnav"
     presenter.css = "sf-menu"
-    presenter.menu_tag = :ul
+    presenter.menu_tag = :nav
     presenter
   end
 
