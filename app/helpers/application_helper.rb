@@ -1,11 +1,11 @@
 module ApplicationHelper
 
-  def side_menu
+  def header_menus
     side_menu_items = Refinery::Menu.new @header_menu_pages
     presenter = Refinery::Pages::MenuPresenter.new(side_menu_items, self)
-    presenter.dom_id = "side-menu"
-    presenter.css = ""
-    presenter.menu_tag = :nav
+    presenter.dom_id = "topnav"
+    presenter.css = "sf-menu"
+    presenter.menu_tag = :ul
     presenter
   end
 
